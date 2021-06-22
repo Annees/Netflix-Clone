@@ -1,0 +1,131 @@
+/*Day-2 of build (Authentication and plans profile screen)*/
+.loginScreen{
+    position: relative;
+    height: 100%;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/757ab38f-5d08-40bc-b3eb-eaba63ed8203/93c34f94-56c8-40a7-8b2e-b4aac6427977/GB-en-20210125-popsignuptwoweeks-perspective_alpha_website_medium.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.loginScreen__body > h1 {
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+
+.loginScreen__body > h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.loginScreen__body > h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.loginScreen__body{
+    position: absolute;
+    width: 96%;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
+    left: 0;
+    right: 0;
+}
+
+.loginScreen__gradient{
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background:rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+}
+
+.loginScreen__button{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;     /*20 on sides and 10 on top n bottom*/
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+}
+
+.loginScreen__logo{
+    position: fixed;
+    left: 0;
+    width: 150px;
+    object-fit: contain;
+    padding-left: 20px;
+}
+
+.loginScreen__input > form > input {
+    padding: 10px;
+    outline-width: 0;
+    height: 30px;
+    width: 40%;
+    border: none;
+    max-width: 600px;
+}
+
+.loginScreen__input{
+    margin: 20px;
+}
+.loginScreen__getStarted {
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media(max-width: 667px){
+    .loginScreen__body > h1{
+        font-size: 2.2rem;
+    }
+
+    .loginScreen__body > h2{
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    
+    .loginScreen__body > h3{
+        font-size: 1.15rem;
+    }
+
+    .loginScreen__input{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .loginScreen__input > form > input{
+        width: 50%;
+        border: none;
+    }
+
+    .loginScreen__getStarted{
+        font-size: 1rem;
+        font-weight: 400;
+        cursor: pointer;
+    }
+}
+
+@media(max-width: 340px){
+    .loginScreen__input > form > input{
+        width: 90%;
+        margin-bottom: 14px;
+    }
+}
