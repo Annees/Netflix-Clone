@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import HomeScreen from "./screens/Homescreen"
+import HomeScreen from "./screens/Homescreen";
 import {
   BrowserRouter as Router,
   Switch,
