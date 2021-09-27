@@ -3,13 +3,14 @@ import firebase from 'firebase';
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBKTLjid9VMznggxDw1gYiH5ozcoKo_KJ4",
-    authDomain: "netflix-clone-project-5e0b3.firebaseapp.com",
-    projectId: "netflix-clone-project-5e0b3",
-    storageBucket: "netflix-clone-project-5e0b3.appspot.com",
-    messagingSenderId: "1087680582806",
-    appId: "1:1087680582806:web:ad580c9d744144d3f8deb7"
-  };
+  apiKey: "AIzaSyCtqb33smrXWtFt5BW0Z7QS1oESL8V5WRc",
+  authDomain: "netflix-clone-2afde.firebaseapp.com",
+  projectId: "netflix-clone-2afde",
+  storageBucket: "netflix-clone-2afde.appspot.com",
+  messagingSenderId: "512553427574",
+  appId: "1:512553427574:web:732e770e4c7b1830c77557",
+  measurementId: "G-P2CCR0JTKZ"
+};
 
   const firebaseApp = firebase.initializeApp(firebaseConfig); //initializing the app with these credentials
   const db = firebaseApp.firestore();   //it is actually the realtime database-firestore
