@@ -1,30 +1,33 @@
 //Day-1 of build
-import React from 'react';
-import Banner from '../Banner'; //two dots to escape the folder 
+import React from "react";
+import Banner from "../Banner"; //two dots to escape the folder
 import "./HomeScreen.css";
-import Nav from '../Nav';
-import requests from '../Requests';
+import Nav from "../Nav";
+import requests from "../Requests";
 import Row from "../Row";
-import Footer from '../Footer';
-
+import Footer from "../Footer";
 
 function Homescreen() {
-    return (
-        <div className="homeScreen">
-            <Nav />
-            <Banner />
-            <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} isLargeRow />
-            <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
-            <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
-            <Row title="Action Movies" fetchUrl={requests.fetchActionMovies}/>
-            <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
-            <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
-            <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
-            <Row title="Bollywood Movies" fetchUrl={requests.fetchBollywoodMovies} />
-            <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
-            <Footer />
-        </div>
-    )
+  return (
+    <div className="homeScreen">
+      <Nav />
+      <Banner />
+      <Row
+        title="NETFLIX ORIGINALS"
+        fetchUrl={requests.fetchNetflixOriginals}
+        isLargeRow
+      />
+      <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
+      <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
+      <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
+      <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
+      <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
+      <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
+      <Row title="Bollywood Movies" fetchUrl={requests.fetchBollywoodMovies} />
+      <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+      <Footer />
+    </div>
+  );
 }
 
-export default Homescreen
+export default Homescreen;
