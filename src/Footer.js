@@ -8,7 +8,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.css";
-
+import packageJson from "../package.json";
 function Footer() {
   return (
     <div className="footer">
@@ -45,7 +45,7 @@ function Footer() {
         <button className="footer__codeButton">Service Code</button>
       </div>
       <div className="footer__copyright">
-        <p>&copy; 1997-2021 Netflix Clone,@Anees_Hashmi Inc</p>
+        <p>&copy; 1997-2021 Netflix Clone,@Anees_Hashmi Inc {packageJson.version}</p>
       </div>
     </div>
   );

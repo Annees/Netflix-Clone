@@ -41,5 +41,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build && semantic-release pre"
+    }
+  },
+  "devDependencies": {
+    "husky": "^8.0.3"
   }
 }
